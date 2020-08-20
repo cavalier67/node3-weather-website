@@ -4,6 +4,8 @@ const hbs = require ('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
+//test comment
+
 const app = express();
 
 //Define paths for exress config and handlebars (hbs)
