@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast');
 //test comment
 
 const app = express();
+const port = process.env.PORT || 3000; //gets port from heroku or sets to 3000
 
 //Define paths for exress config and handlebars (hbs)
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -99,7 +100,7 @@ app.get('*',(req, res) => {
     })
 })
 
-app.listen(3000,() => {
-    console.log('The web server is running on port 3000')
+app.listen(port,() => {
+    console.log('The web server is running on port ' + port)
 })
 
