@@ -32,7 +32,6 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        aboutText: 'This is some about text.',
         name: 'KP'
     })
 })
@@ -41,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         name: 'KP',
-        helpText: 'This is some helpful text.'
+        helpText: 'This is some helpful text...'
     })
 })
 
